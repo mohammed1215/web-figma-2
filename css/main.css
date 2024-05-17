@@ -391,6 +391,11 @@ footer .frame-16 h1 {
   font-size: 64px;
   line-height: 76px;
 }
+@media (width<=768px) {
+  footer .frame-16 h1 {
+    font-size: 30px;
+  }
+}
 footer .frame-16 .button {
   width: fit-content;
   background-color: var(--main-color);
@@ -442,7 +447,7 @@ footer .container .company .company-info .social-links {
 footer .container .company .company-info .social-links span {
   width: 32px;
   height: 32px;
-  background-color: hwb(0 100% 0% / 0.102);
+  background-color: #ffffff1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,6 +481,35 @@ footer .container .company .company-links {
   }
   footer .container .company .company-info .social-links {
     justify-content: center;
+  }
+}
+@media (width<=540px) {
+  footer .container .company {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .container .company .company-links {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .container .company .company-links .col {
+    width: 100%;
+    text-align: center;
+  }
+  footer .container .company .company-links .col h4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .container .company .company-links .col-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container .company .company-links .col-3 form {
+    width: 100%;
   }
 }
 footer .container .company .company-links .col h4 {
